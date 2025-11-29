@@ -40,6 +40,18 @@ Placez le fichier `.jar` dans votre dossier `mods` de Minecraft.
 
 - **[QUICK_START.md](QUICK_START.md)** - Guide de démarrage rapide
 - **[CONFIGURATION.md](CONFIGURATION.md)** - Guide de configuration détaillé
+- **[FORMULAIRE_TIKTOK_APP.md](FORMULAIRE_TIKTOK_APP.md)** - Guide pour remplir le formulaire TikTok
+- **[ACTIVATION_GITHUB_PAGES.md](ACTIVATION_GITHUB_PAGES.md)** - Activer GitHub Pages pour les URLs
+- **[URLS_TIKTOK_FORMULAIRE.md](URLS_TIKTOK_FORMULAIRE.md)** - URLs prêtes pour le formulaire TikTok
+
+## 🌐 Pages Web (GitHub Pages)
+
+Une fois GitHub Pages activé, les pages seront disponibles à :
+- **Page d'accueil** : https://samymas.github.io/tiktok-minecraft/
+- **Terms of Service** : https://samymas.github.io/tiktok-minecraft/terms.html
+- **Privacy Policy** : https://samymas.github.io/tiktok-minecraft/privacy.html
+
+Voir [ACTIVATION_GITHUB_PAGES.md](ACTIVATION_GITHUB_PAGES.md) pour activer GitHub Pages.
 
 ## 🎯 Utilisation
 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité - TikTok Minecraft Integration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            color: #333; 
+            border-bottom: 3px solid #ff0050;
+            padding-bottom: 10px;
+        }
+        h2 { 
+            color: #666; 
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p { margin: 15px 0; }
+        ul { margin: 15px 0; padding-left: 30px; }
+        .date { color: #999; font-style: italic; }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #999;
+        }
+        a { color: #ff0050; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Politique de confidentialité</h1>
+        
+        <p class="date"><strong>Dernière mise à jour :</strong> 15 janvier 2025</p>
+        
+        <h2>1. Introduction</h2>
+        <p>Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos données personnelles lorsque vous utilisez l'application d'intégration TikTok Live avec Minecraft.</p>
+        <p>Nous nous engageons à protéger votre vie privée et à respecter le Règlement Général sur la Protection des Données (RGPD) et les lois applicables sur la protection des données.</p>
+        
+        <h2>2. Collecte de données</h2>
+        <p>Cette application collecte uniquement les données nécessaires à l'intégration TikTok Live :</p>
+        <ul>
+            <li><strong>Événements de live</strong> : Cadeaux, donations, likes, commentaires, abonnements reçus pendant vos lives TikTok</li>
+            <li><strong>Informations de base du compte</strong> : Nom d'utilisateur TikTok et ID unique (pour l'authentification via l'API TikTok)</li>
+            <li><strong>Données de connexion</strong> : Informations nécessaires pour établir la connexion WebSocket entre le serveur et Minecraft</li>
+        </ul>
+        <p><strong>Nous ne collectons PAS :</strong></p>
+        <ul>
+            <li>Votre mot de passe TikTok</li>
+            <li>Vos informations de paiement</li>
+            <li>Votre adresse email (sauf si fournie via l'API TikTok)</li>
+            <li>Vos données de localisation</li>
+        </ul>
+        
+        <h2>3. Utilisation des données</h2>
+        <p>Les données collectées sont utilisées uniquement pour :</p>
+        <ul>
+            <li>Recevoir les événements en temps réel pendant vos lives TikTok via l'API TikTok Live</li>
+            <li>Transmettre ces événements à votre instance Minecraft via WebSocket</li>
+            <li>Déclencher les actions correspondantes dans le jeu (spawn d'items, effets, messages)</li>
+            <li>Authentifier votre accès à l'API TikTok</li>
+        </ul>
+        <p>Les données ne sont utilisées à aucune autre fin et ne sont pas partagées avec des tiers.</p>
+        
+        <h2>4. Stockage des données</h2>
+        <p>Les données sont traitées en temps réel et ne sont pas stockées de manière permanente sur nos serveurs. Aucune base de données n'est utilisée pour conserver vos données personnelles.</p>
+        <p>Les seules données conservées sont :</p>
+        <ul>
+            <li>Les tokens d'accès TikTok (nécessaires pour l'authentification API) - stockés localement dans votre fichier .env</li>
+            <li>Les logs de connexion (pour le débogage) - supprimés automatiquement après 7 jours</li>
+        </ul>
+        
+        <h2>5. Partage des données</h2>
+        <p>Nous ne partageons, ne vendons ni ne louons vos données personnelles à des tiers. Les données sont utilisées exclusivement pour le fonctionnement de l'application.</p>
+        <p>Vos données peuvent être transmises à :</p>
+        <ul>
+            <li><strong>TikTok</strong> : Pour l'authentification et la réception des événements (conformément à leur politique de confidentialité)</li>
+            <li><strong>Votre instance locale</strong> : Les données sont transmises uniquement à votre serveur local et à votre jeu Minecraft</li>
+        </ul>
+        
+        <h2>6. Sécurité</h2>
+        <p>Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos données contre tout accès non autorisé, altération, divulgation ou destruction :</p>
+        <ul>
+            <li>Chiffrement des communications via HTTPS/WebSocket sécurisé</li>
+            <li>Stockage sécurisé des tokens d'accès (fichier .env non versionné)</li>
+            <li>Validation des webhooks TikTok pour éviter les requêtes frauduleuses</li>
+        </ul>
+        
+        <h2>7. Vos droits (RGPD)</h2>
+        <p>Conformément au RGPD et aux lois sur la protection des données, vous avez le droit de :</p>
+        <ul>
+            <li><strong>Accéder</strong> à vos données personnelles</li>
+            <li><strong>Rectifier</strong> vos données si elles sont inexactes</li>
+            <li><strong>Supprimer</strong> vos données (droit à l'oubli)</li>
+            <li><strong>Vous opposer</strong> au traitement de vos données</li>
+            <li><strong>Portabilité</strong> de vos données</li>
+            <li><strong>Limiter</strong> le traitement de vos données</li>
+        </ul>
+        <p>Pour exercer ces droits, veuillez ouvrir une issue sur le <a href="https://github.com/SamymaS/tiktok-minecraft">repository GitHub</a>.</p>
+        
+        <h2>8. Cookies</h2>
+        <p>Cette application n'utilise pas de cookies pour le suivi des utilisateurs. Aucun cookie n'est déposé sur votre navigateur.</p>
+        
+        <h2>9. Données des mineurs</h2>
+        <p>Cette application n'est pas destinée aux utilisateurs de moins de 13 ans. Si vous avez moins de 13 ans, veuillez ne pas utiliser cette application. Si nous apprenons qu'un utilisateur de moins de 13 ans utilise l'application, nous supprimerons ses données.</p>
+        
+        <h2>10. Modifications de cette politique</h2>
+        <p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Les modifications seront publiées sur cette page avec une mise à jour de la date de "Dernière mise à jour".</p>
+        <p>Nous vous encourageons à consulter régulièrement cette page pour rester informé de la façon dont nous protégeons vos données.</p>
+        
+        <h2>11. Contact</h2>
+        <p>Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, veuillez :</p>
+        <ul>
+            <li>Ouvrir une issue sur le <a href="https://github.com/SamymaS/tiktok-minecraft">repository GitHub</a></li>
+            <li>Consulter les <a href="terms.html">Conditions d'utilisation</a></li>
+        </ul>
+        
+        <div class="footer">
+            <p>© 2025 TikTok Minecraft Integration. Code source disponible sur <a href="https://github.com/SamymaS/tiktok-minecraft">GitHub</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
+

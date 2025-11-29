@@ -26,20 +26,12 @@ dans leur partie Minecraft.
 
 ### 2. Terms of Service URL * (Obligatoire)
 
-**Option 1 : Créer une page simple**
-
-Créez une page HTML simple avec vos conditions d'utilisation et hébergez-la (GitHub Pages, Netlify, etc.)
-
-**Option 2 : Utiliser un service gratuit**
-
-- **GitHub Pages** : Créez un fichier `terms.html` dans un repo GitHub et activez GitHub Pages
-- **Netlify Drop** : Glissez-déposez un fichier HTML
-- **Vercel** : Déployez une page simple
-
-**Exemple d'URL** :
+✅ **URL GitHub Pages (déjà configurée)** :
 ```
-https://votre-username.github.io/tiktok-minecraft/terms.html
+https://samymas.github.io/tiktok-minecraft/terms.html
 ```
+
+Les pages sont déjà créées dans le dossier `docs/` du repository. Il suffit d'activer GitHub Pages (voir instructions ci-dessous).
 
 **Template de Terms of Service** (à créer) :
 ```html
@@ -60,12 +52,12 @@ https://votre-username.github.io/tiktok-minecraft/terms.html
 
 ### 3. Privacy Policy URL * (Obligatoire)
 
-Même principe que pour les Terms of Service.
+✅ **URL GitHub Pages (déjà configurée)** :
+```
+https://samymas.github.io/tiktok-minecraft/privacy.html
+```
 
-**Exemple d'URL** :
-```
-https://votre-username.github.io/tiktok-minecraft/privacy.html
-```
+Les pages sont déjà créées dans le dossier `docs/` du repository.
 
 **Template de Privacy Policy** :
 ```html
@@ -96,16 +88,18 @@ Sélectionnez :
 
 ### 5. Web/Desktop URL * (Obligatoire)
 
-**Pour les tests** :
+✅ **URL GitHub Pages (recommandée)** :
 ```
-http://localhost:3000
+https://samymas.github.io/tiktok-minecraft/
 ```
 
-**Pour la production** :
-- Utilisez votre URL publique (ex: `https://votre-domaine.com`)
-- Ou utilisez ngrok pour les tests : `https://abc123.ngrok.io`
+**Alternative pour les tests avec ngrok** :
+```
+https://abc123.ngrok.io
+```
+(Utilisez ngrok si vous voulez tester avec votre serveur local)
 
-**Note** : TikTok peut vérifier cette URL, donc pour les tests, utilisez ngrok ou une URL publique.
+**Note** : TikTok peut vérifier cette URL. GitHub Pages est la meilleure option car elle est toujours accessible.
 
 ### 6. Explain how each product and scope works * (Obligatoire)
 
