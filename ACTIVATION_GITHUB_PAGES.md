@@ -12,23 +12,33 @@ Une fois GitHub Pages activé, vous aurez accès à :
 
 ## ✅ Étapes pour activer GitHub Pages
 
-### Méthode 1 : Via l'interface GitHub (Recommandée)
+### ⚠️ IMPORTANT : Activer d'abord manuellement
+
+**Vous devez activer GitHub Pages manuellement AVANT que le workflow GitHub Actions puisse fonctionner.**
+
+### Méthode 1 : Via l'interface GitHub (Recommandée - OBLIGATOIRE)
 
 1. Allez sur votre repository : https://github.com/SamymaS/tiktok-minecraft
 2. Cliquez sur **Settings** (Paramètres) en haut du repository
 3. Dans le menu de gauche, cliquez sur **Pages**
 4. Sous **Source**, sélectionnez :
+   - **Deploy from a branch** (si ce n'est pas déjà sélectionné)
    - **Branch** : `main`
    - **Folder** : `/docs`
 5. Cliquez sur **Save** (Enregistrer)
+6. ⏱️ Attendez 5-10 minutes pour l'activation
 
-### Méthode 2 : Via GitHub Actions (Automatique)
+### Méthode 2 : Utiliser GitHub Actions (Après activation manuelle)
 
-Le workflow GitHub Actions est déjà configuré dans `.github/workflows/pages.yml`.
+Une fois GitHub Pages activé manuellement, le workflow GitHub Actions dans `.github/workflows/pages.yml` pourra fonctionner.
 
 Il se déclenchera automatiquement quand vous :
 - Poussez des modifications dans le dossier `docs/` sur la branche `main`
 - Ou déclenchez manuellement via l'onglet **Actions**
+
+### 🔧 Si vous avez une erreur avec GitHub Actions
+
+Si vous voyez l'erreur "Get Pages site failed", c'est que GitHub Pages n'est pas encore activé. Suivez la **Méthode 1** ci-dessus, puis consultez [FIX_GITHUB_PAGES_ERROR.md](FIX_GITHUB_PAGES_ERROR.md) pour plus de détails.
 
 ## ⏱️ Délai d'activation
 
