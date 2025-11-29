@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT"
+
+[[mods]]
+modId="tiktoklive"
+version="1.0.0"
+displayName="TikTok Live Mod"
+description='''
+Mod pour connecter Minecraft aux lives TikTok.
+Déclenche des événements dans le jeu lorsque vous recevez des donations ou récompenses.
+'''
+
+[[dependencies.tiktoklive]]
+modId="forge"
+mandatory=true
+versionRange="[40.0.0,)"
+ordering="NONE"
+side="BOTH"
+
+

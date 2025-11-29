@@ -1,0 +1,23 @@
+# Backend
+backend/node_modules/
+backend/.env
+backend/*.log
+
+# Minecraft Mod
+minecraft-mod/.gradle/
+minecraft-mod/build/
+minecraft-mod/.idea/
+minecraft-mod/*.iml
+minecraft-mod/run/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
